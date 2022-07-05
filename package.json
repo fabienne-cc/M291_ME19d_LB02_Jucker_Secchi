@@ -1,0 +1,11 @@
+{
+    "name": "lb02-m307-project",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "install": "yarn --cwd ./client && yarn --cwd ./server",
+        "run:client": "yarn --cwd ./client serve",
+        "run:server": "yarn --cwd ./server multiserver"
+    }
+}

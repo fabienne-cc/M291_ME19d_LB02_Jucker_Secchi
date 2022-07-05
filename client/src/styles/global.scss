@@ -1,0 +1,268 @@
+@import 'products';
+
+body {
+    font-family: "Roboto Light";
+    margin-top: 0px;
+    background-color: darkcyan;
+}
+
+h1 {
+    color: white;
+}
+
+#app {
+    font-family: "Roboto Light";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: white;
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    horiz-align: left;
+    padding-right: 50px;
+}
+
+.logo {
+    display: inline-block;
+    width: 100%;
+    max-width: 13px;
+}
+
+#nav {
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#nav a {
+    font-family: "Roboto";
+    color: white;
+}
+
+#nav a.router-link-exact-active {
+    color: #fb6e52;
+}
+
+#header {
+    position: sticky;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #fb6e52;
+    }
+}
+
+#cart {
+    display: flex;
+    padding: 10px;
+    border: 2px solid #fb6e52;
+    margin: auto 0px;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        padding-right: 5px;
+    }
+
+    p {
+        margin: auto;
+    }
+
+    p:hover {
+        text-decoration: underline;
+    }
+
+    .modal {
+        position: absolute;
+        background-color: white;
+        padding: 30px;
+        width: 300px;
+        right: 0;
+        top: 50px;
+        cursor: auto;
+
+        p:hover {
+            text-decoration: none;
+        }
+    }
+
+    .table {
+        width: 100%;
+        margin-top: 50px;
+
+        .cartItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid darkslategray;
+
+            span {
+                margin: 0px 5px;
+            }
+        }
+
+        .headerRow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid darkslategray;
+            font-family: "Roboto Light";
+        }
+    }
+
+    .total {
+        justify-content: space-between;
+        margin: 50px 0px;
+        display: flex;
+    }
+
+    button {
+        background-color: #fb6e52;
+        color: lightgrey;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+#logo {
+    display: flex;
+
+    img {
+        width: 5vw;
+        margin: auto;
+    }
+}
+
+.person {
+    display: flex;
+    margin: 50px 250px;
+    width: 25px;
+
+    position: relative;
+    img {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    div {
+        background-color: white;
+        position: absolute;
+        left: 90%;
+        top: 50%;
+        width: 150%;
+        transform: translate(0, -50%);
+        padding: 50px;
+
+        h1 {
+            font-size: 3vw;
+        }
+    }
+}
+
+
+footer {
+    background-color: #fb6e52;
+    border: none;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: 50px;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .social-media {
+        font-family: "Roboto Light";
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 300;
+    }
+}
+
+#pageNotFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 3vw;
+    font-family: "Roboto Light";
+    color: darkslategray;
+}
+
+.backButton {
+    margin: 50px;
+
+    p {
+        width: fit-content;
+        background-color: #fb6e52;
+        color: lightgrey;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 3vw;
+    color: black;
+}
+
+button {
+    background-color: #fb6e52;
+    color: lightgrey;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.formular {
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .form-teil {
+        padding: 20px 0px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
